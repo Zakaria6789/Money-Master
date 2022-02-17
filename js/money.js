@@ -24,6 +24,7 @@ document.getElementById('calculate').addEventListener('click', function () {
     else if (foodCost >= 0 && rentCost >= 0 && clothesCost >= 0 && incomeAmount >= 0) {
         totalExpenses.innerText = totalCost;
         balance.innerText = parseInt(income.value) - parseInt(totalExpenses.innerText);
+        document.getElementById('over-expenses').style.display = 'none';
         document.getElementById('negative-number-massage').style.display = 'none';
         document.getElementById('string-massage').style.display = 'none';
     }
@@ -31,10 +32,12 @@ document.getElementById('calculate').addEventListener('click', function () {
     else if (foodCost < 0 || rentCost < 0 || clothesCost < 0 || incomeAmount < 0) {
         document.getElementById('negative-number-massage').style.display = 'block';
         document.getElementById('string-massage').style.display = 'none';
+        document.getElementById('over-expenses').style.display = 'none';
     }
     else {
         document.getElementById('string-massage').style.display = 'block';
         document.getElementById('negative-number-massage').style.display = 'none';
+        document.getElementById('over-expenses').style.display = 'none';
     }
 
 })
