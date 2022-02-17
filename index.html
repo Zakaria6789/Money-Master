@@ -40,6 +40,8 @@
                         <input id="clothes" class="px-2" type="text" value=500>
                         <br>
                         <!-- error massage -->
+                        <p id="over-expenses" style="display:none" class="text-danger"><small>note: expenses less than
+                                income</small></p>
                         <small style="display: none;" id="string-massage" class="text-danger">note : string not allowed
                             !</small>
                         <small style="display: none;" id="negative-number-massage" class="text-danger">note : negative
@@ -52,6 +54,8 @@
                         <input id="save-input" class="px-2" type="text" value="10">
                         <span>%</span>
                         <input id="save" class="btn-sm btn-primary mt-3" type="button" value="Save">
+                        <p id="over-balance" style="display: none;" class="text-danger"><small>note: not enough
+                                balance</small></p>
                         <h5>Saving Amount : <span id="saving-amount">450</span></h5>
                         <h5>Remaining Balance : <span id="remaining">4050</span></h5>
                     </div>
