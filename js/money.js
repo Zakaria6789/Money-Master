@@ -1,11 +1,11 @@
-/////// shared function:
+/////// shared function \\\\\\\\\
 function errorMasage(error1, error2, error3) {
     document.getElementById('over-expenses').style.display = error1;
     document.getElementById('string-massage').style.display = error2;
     document.getElementById('negative-number-massage').style.display = error3;
 }
 
-/////// (Total Expenses) And (Balance Part) with (Error Massage): 
+/////// (Total Expenses) And (Balance Part) with (Error Massage) \\\\\\\\ 
 const income = document.getElementById('income');
 const food = document.getElementById('food');
 const rent = document.getElementById('rent');
@@ -25,7 +25,7 @@ document.getElementById('calculate').addEventListener('click', function () {
     }
     else if (foodCost >= 0 && rentCost >= 0 && clothesCost >= 0 && incomeAmount >= 0) {
 
-        /////// main code for click event:
+        /////// main code for click event \\\\\\\\
         totalExpenses.innerText = totalCost;
         balance.innerText = parseInt(income.value) - parseInt(totalExpenses.innerText);
         errorMasage('none', 'none', 'none');
@@ -38,7 +38,7 @@ document.getElementById('calculate').addEventListener('click', function () {
     }
 })
 
-/////// (Saving Amount) And (Remaining Balance) with (Error Massage):
+/////// (Saving Amount) And (Remaining Balance) with (Error Massage) \\\\\\\\
 const savingAmount = document.getElementById('saving-amount');
 const saveInput = document.getElementById('save-input');
 const remaining = document.getElementById('remaining');
@@ -49,7 +49,7 @@ document.getElementById('save').addEventListener('click', function () {
     }
     else if (saveInput.value >= 0) {
 
-        /////// main code for click event:
+        /////// main code for click event \\\\\\\\
         savingAmount.innerText = (balance.innerText * saveInput.value) / 100;
         remaining.innerText = balance.innerText - savingAmount.innerText;
         document.getElementById('over-balance').style.display = 'none';

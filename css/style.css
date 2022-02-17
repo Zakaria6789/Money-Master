@@ -1,15 +1,20 @@
+/********** white space error fix ********/
 html,body {
     overflow-x: hidden;
 }
 
+/**************************** main css ****************************/
 .money-img {
     object-fit: cover;
 }
+.wrapper-right {
+    background-color: #F8F8F8;
+}
 
+/******** input label and input-field and error-massage ******/
 .input-label {
     width: 70px;
 }
-
 .input {
     border: none;
     border-radius: 5px;
@@ -17,20 +22,15 @@ html,body {
     margin-left: 5px;
     background-color: #DCDCDC;
 }
-
-.wrapper {
-    background-color: #F8F8F8;
+.error-massage {
+    margin-top: 5px;
 }
 
+/************ saving part **********/
 .save-btn {
     padding: 7px 40px;
 }
-
 #save-input {
     width: 100px;
     margin-top: 10px;
-}
-
-.error-massage {
-    margin-top: 5px;
 }
