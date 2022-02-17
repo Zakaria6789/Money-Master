@@ -31,14 +31,20 @@
                         <input id="income" class="px-2" type="text" value="10000">
                         <h5>Expenses</h5>
                         <label for="">Food :</label>
-                        <input id="food" class="px-2" type="text" value="3000">
+                        <input id="food" class="px-2" type="text" value=3000>
                         <br>
                         <label class="mt-3" for="">Rent :</label>
-                        <input id="rent" class="px-2" type="text" value="2000">
+                        <input id="rent" class="px-2" type="text" value=2000>
                         <br>
                         <label class="mt-3" for="">Clothes :</label>
-                        <input id="clothes" class="px-2" type="text" value="500">
+                        <input id="clothes" class="px-2" type="text" value=500>
                         <br>
+                        <!-- error massage -->
+                        <small style="display: none;" id="string-massage" class="text-danger">note : string not allowed
+                            !</small>
+                        <small style="display: none;" id="negative-number-massage" class="text-danger">note : negative
+                            number
+                            not allowed!</small>
                         <input id="calculate" class="btn btn-primary mt-3" type="button" value="Calcucate">
                         <h5>Total expenses : <span id="total-expenses">5500</span> </h5>
                         <h5>Balance : <span id="balance">4500</span></h5>
