@@ -43,11 +43,11 @@
                         <h5>Total expenses : <span id="total-expenses">5500</span> </h5>
                         <h5>Balance : <span id="balance">4500</span></h5>
                         <label for="">Save :</label>
-                        <input class="px-2" type="text" value="20">
+                        <input id="save-input" class="px-2" type="text" value="10">
                         <span>%</span>
-                        <input class="btn-sm btn-primary mt-3" type="button" value="Save">
-                        <h5>Saving Amount : 2000</h5>
-                        <h5>Remaining Balance : 2500</h5>
+                        <input id="save" class="btn-sm btn-primary mt-3" type="button" value="Save">
+                        <h5>Saving Amount : <span id="saving-amount">450</span></h5>
+                        <h5>Remaining Balance : <span id="remaining">4050</span></h5>
                     </div>
                 </div>
             </div>
@@ -67,9 +67,19 @@
         const totalExpenses = document.getElementById('total-expenses');
         const balance = document.getElementById('balance');
 
+        // Calculate Total Expenses And Balance: 
         document.getElementById('calculate').addEventListener('click', function () {
             totalExpenses.innerText = parseInt(food.value) + parseInt(rent.value) + parseInt(clothes.value);
             balance.innerText = parseInt(income.value) - parseInt(totalExpenses.innerText);
+        })
+
+        const savingAmount = document.getElementById('saving-amount');
+        const saveInput = document.getElementById('save-input');
+        const remaining = document.getElementById('remaining');
+
+        document.getElementById('save').addEventListener('click', function () {
+            savingAmount.innerText = (balance.innerText * saveInput.value) / 100;
+            remaining.innerText = balance.innerText - savingAmount.innerText;
         })
 
     </script>
