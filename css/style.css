@@ -1,0 +1,36 @@
+html,body {
+    overflow-x: hidden;
+}
+
+.money-img {
+    object-fit: cover;
+}
+
+.input-label {
+    width: 70px;
+}
+
+.input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+    background-color: #DCDCDC;
+}
+
+.wrapper {
+    background-color: #F8F8F8;
+}
+
+.save-btn {
+    padding: 7px 40px;
+}
+
+#save-input {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.error-massage {
+    margin-top: 5px;
+}
